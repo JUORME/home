@@ -1,3 +1,19 @@
+# LIBRERIAS
+
+# install.packages("haven") 
+# install.packages("foreign") 
+# install.packages("dplyr") 
+# install.packages("VIM")
+# install.packages("mice")
+# install.packages("dummies")
+# install.packages("writexl")
+# install.packages("caTools")
+# install.packages("e1071")
+# install.packages("naivebayes")
+# install.packages("caret")
+# install.packages("rpart")
+
+
 ## Importar Datos
 library(haven)
 dataset <- read_sav("D:/home/test/basemujeres5.sav")
@@ -76,9 +92,9 @@ write_xlsx(dataset2,"D:/home/test/DataExcel.xlsx")
 
 ##Actualizar el dataset2 con el archivo excel exportado (para librar problemas en y)
 library(readxl)
-dataset2 <- read_excel("DataExcel.xlsx")
+dataset2 <- read_excel("D:/home/test/DataExcel.xlsx")
 dataset2 = as.data.frame(dataset2)
-View(dataset)
+#View(dataset)
 str(dataset2)
 
 
